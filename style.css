@@ -1,0 +1,77 @@
+body {
+background-color: rgb(66, 65, 65);
+}
+
+/* Grundlayout für den Nav-Bereich */
+#nav {
+    position: absolute;
+    bottom: 20px;   
+    right: 20px;   
+    z-index: 2;   
+    display: flex; 
+    gap: 10px;      
+}
+
+
+#nav input[type="button"] {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #ddd;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#a:hover {
+    transform: scale(1.1);
+}
+#F1:hover {
+    transform: scale(1.1);
+}
+
+#F2:hover {
+    transform: scale(1.1);
+}
+#F3:hover {
+    transform: scale(1.1);
+}
+#F4:hover {
+    transform: scale(1.1);
+}
+#mutebtn:hover {
+    transform: scale(1.1);
+}
+
+#cams  {
+    height: 100%;
+    width: 100%;
+    border: none;
+   
+}
+#cams iframe {
+    border-color: #333;
+    border-style: solid;
+}
+
+.alle  {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 9px;
+     margin-left: 8.4px;
+  }
+  .alle iframe {
+    width: 95%;
+    height: 490px;
+  }
+
+  
+
+.full-cam iframe {
+width: 100%;
+height: 990px;
+}
+
+
+

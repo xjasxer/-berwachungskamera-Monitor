@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Überwachungs Monitor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    
+    <div id="nav">
+        <input type="button" value="Düsseldorf" onclick="dus()" id="dus" data-cam1="https://player.livespotting.com/?alias=yak1sbfx&ch=hvasmdro" data-cam2="https://player.livespotting.com/?alias=yak1sbfx&ch=4xbp4z1f" data-cam3="https://player.livespotting.com/?alias=yak1sbfx&ch=fxmwsxp6" data-cam4="">
+        <input type="button" value="Langenfeld" id="langenfeld"  onclick="langenfeld()"  data-cam1="https://cams.wasserski-langenfeld.de:8182/cgi-bin/stream.jpg?size=600x400&fps=0" data-cam2="" data-cam3="" data-cam4="">
+        <input type="button" value="4/4" id="a">
+        <input type="button" value="F1" id="F1">
+        <input type="button" value="F2" id="F2">
+        <input type="button" value="F3" id="F3">
+        <input type="button" value="F4" id="F4">
+        <input type="button" value="Mute" id="mutebtn">
 
+    </div>  
+
+    <div id="cams" style="position: relative;" class="alle">
+      
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; background: transparent; display: none;" id="mutediv"></div>
+        <iframe src="" ></iframe>
+        <iframe src="" ></iframe>
+        <iframe src="" ></iframe>
+        <iframe src="" ></iframe>
+    </div>
+
+</body>
+</html>
