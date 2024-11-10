@@ -69,27 +69,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function dus() {
+function updateCams(buttonId) {
     const iframes = document.querySelectorAll('#cams iframe');
-    const e = iframes[0];
-    const z = iframes[1];
-    const d = iframes[2];
-    const v = iframes[3];
+    const button = document.getElementById(buttonId);
 
-    e.src = document.getElementById('dus').getAttribute('data-cam1')
-    z.src = document.getElementById('dus').getAttribute('data-cam2')
-    d.src = document.getElementById('dus').getAttribute('data-cam3')
-    v.src = document.getElementById('dus').getAttribute('data-cam4')
-}
-function langenfeld() {
-    const iframes = document.querySelectorAll('#cams iframe');
-    const e = iframes[0];
-    const z = iframes[1];
-    const d = iframes[2];
-    const v = iframes[3];
-
-    e.src = document.getElementById('langenfeld').getAttribute('data-cam1')
-    z.src = document.getElementById('langenfeld').getAttribute('data-cam2')
-    d.src = document.getElementById('langenfeld').getAttribute('data-cam3')
-    v.src = document.getElementById('langenfeld').getAttribute('data-cam4')
+    iframes[0].src = button.getAttribute('data-cam1');
+    iframes[1].src = button.getAttribute('data-cam2');
+    iframes[2].src = button.getAttribute('data-cam3');
+    iframes[3].src = button.getAttribute('data-cam4');
 }
